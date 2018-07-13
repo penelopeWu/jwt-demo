@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.3.RELEASE'
+    }
+    repositories {
+        maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+}
+
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compileOnly('org.projectlombok:lombok')
+    compile group: 'com.auth0', name: 'java-jwt', version: '3.3.0'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
