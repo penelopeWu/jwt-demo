@@ -28,6 +28,13 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compileOnly('org.projectlombok:lombok')
     compile group: 'com.auth0', name: 'java-jwt', version: '3.3.0'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile group: 'org.apache.shiro', name: 'shiro-core', version: '1.4.0'
+    compile group: 'org.apache.shiro', name: 'shiro-web', version: '1.4.0'
+    compile group: 'org.apache.shiro', name: 'shiro-spring', version: '1.4.0'
+    compile group: 'org.apache.shiro', name: 'shiro-ehcache', version: '1.4.0'
+    compile group: 'org.apache.shiro', name: 'shiro-cas', version: '1.4.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

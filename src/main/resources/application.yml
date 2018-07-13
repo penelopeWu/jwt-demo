@@ -1,0 +1,8 @@
+# jwt \u914D\u7F6E
+jwt:
+  # \u52A0\u5BC6\u5BC6\u94A5
+  secret: 61D73234C4F93E03074D74D74D1E39D9
+  # token\u6709\u6548\u65F6\u957F
+  expire: 7 # 7\u5929\uFF0C\u5355\u4F4D\u5929
+  # token \u5B58\u5728 header \u4E2D\u7684\u53C2\u6570
+  header: token
