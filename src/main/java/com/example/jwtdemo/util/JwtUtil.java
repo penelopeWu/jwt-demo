@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
+ * <p>
+ *     使用jjwt.jar实现的jwt token
+ * </p>
  * @author penelope
  */
 @Component
