@@ -40,7 +40,7 @@ public class Auth2Filter extends FormAuthenticationFilter {
             //检查token有效性
             //ExpiredJwtException JWT已过期
             //SignatureException JWT可能被篡改
-            Jwts.parser().setSigningKey(jwtUtils.getSecret()).parseClaimsJws(token).getBody();
+            jwtUtils.getClaimByToken(token);
         }catch (Exception e){
             onLoginFail(request,response);
             return false;
