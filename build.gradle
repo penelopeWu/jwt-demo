@@ -36,5 +36,6 @@ dependencies {
     compile group: 'org.apache.shiro', name: 'shiro-ehcache', version: '1.4.0'
     compile group: 'org.apache.shiro', name: 'shiro-cas', version: '1.4.0'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

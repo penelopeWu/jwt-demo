@@ -5,7 +5,6 @@ import com.example.jwtdemo.util.ShiroUtils;
 import com.example.jwtdemo.vo.UserForm;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -18,8 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 public class LoginController {
 
-    @Autowired
-    private JwtUtil jwtUtils;
+    private JwtUtil jwtUtils = new JwtUtil();
 
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody UserForm formInfo) {

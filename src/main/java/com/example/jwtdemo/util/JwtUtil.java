@@ -17,7 +17,6 @@ import java.util.Date;
  * </p>
  * @author penelope
  */
-@Component
 @ConditionalOnProperty(prefix = "jwt")
 public class JwtUtil {
     private Logger logger = LoggerFactory.getLogger(JwtUtil.class);
